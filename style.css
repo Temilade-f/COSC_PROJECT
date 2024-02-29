@@ -1,65 +1,3 @@
-/*
-=============== 
-Fonts
-===============
-*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-
-/*
-=============== 
-Variables
-===============
-*/
-
-:root {
-  /* dark shades of primary color*/
-  --clr-primary-1: #063251;
-  --clr-primary-2: #063251;
-  --clr-primary-3: #0b64a4;
-  --clr-primary-4: #2d87c8;
-  /* primary/main color */
-  --clr-primary-5: #49a6e9;
-  /* lighter shades of primary color */
-  --clr-primary-6: #6ebef7
-  --clr-primary-7: #8bcbf9; 
-  --clr-primary-8: #a5d5f8;
-  --clr-primary-9: #c5e5fc;
-  --clr-primary-10: #ebf7ff;
-  /* darkest grey - used for headings */
-  --clr-grey-1: #102a42;
-  --clr-grey-2: #243a52;
-  --clr-grey-3: #324d67;
-  --clr-grey-4: #48647f;
-  /* grey used for paragraphs */
-  --clr-grey-5: #231414;
-  --clr-grey-6: #829ab0;
-  --clr-grey-7: #9eb2c7;
-  --clr-grey-8: #bcccdc;
-  --clr-grey-9: #dae2ec;
-  --clr-grey-10: #f1f5f8;
-  --clr-white: #fff;
-  --clr-red-dark: #bb2525;
-  --clr-red-light: #e66b6b;
-  --clr-green-dark: #25bb32;
-  --clr-green-light: #6be675;
-  --clr-black: #222;
-  --clr-gold: #c59d5f;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
-  --spacing: 0.25rem;
-  --radius: 0.5rem;
-  --light-shadow: 0 5px 15px #0000001a;
-  --dark-shadow: 0 5px 15px #00000033;
-  --max-width: 1170px;
-  --fixed-width: 620px;
-}
-/*
-=============== 
-Global Styles
-===============
-*/
-
 *,
 ::after,
 ::before {
@@ -68,20 +6,15 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-secondary);
-  background: var(--clr-grey-8);
-  color: var(--clr-grey-1);
+  font-family: "Open Sans", sans-serif;
+  background: #bcccdc;
+  color: #102a42;
   line-height: 1.5;
   font-size: 0.875rem;
 }
 
-ul {
-  list-style-type: none;
-}
 
-a {
-  text-decoration: none;
-}
+
 
 img:not(.logo) {
   width: 100%;
@@ -95,11 +28,11 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.25rem;
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -116,6 +49,7 @@ h3 {
 
 h4 {
   font-size: 0.875rem;
+  color: #7d220e;
 }
 
 
@@ -147,32 +81,32 @@ h4 {
   }
 
   .gift-info p {
-    color: var(--clr-grey-4);
-    /* text-align: justify; */
+    color: #48647f;
+  
   }
   
 }
-/*  global classes */
+
 
 .btn {
   text-transform: uppercase;
   background: transparent;
-  color: var(--clr-black);
+  color: #222;
   padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.25rem;
   display: inline-block;
-  transition: var(--transition);
+  transition: all 0.3s linear;
   font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
+  border: 2px solid #222;
   cursor: pointer;
   box-shadow: 0 1px 3px #00000033;
-  border-radius: var(--radius);
+  border-radius: 0.5rem;
 }
 .btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
+  color: #fff;
+  background: #222;
 }
-/* section */
+
 .section {
   padding: 5rem 0;
 }
@@ -188,11 +122,7 @@ main {
   display: grid;
   place-items: center;
 }
-/*
-=============== 
-Countdown Timer
-===============
-*/
+
 .gift-img {
   margin-bottom: 2rem;
 }
@@ -203,16 +133,16 @@ Countdown Timer
 
 .gift-info h3 {
   text-transform: uppercase;
-  color: var(--clr-primary-3);
+  color: #324d67;
 }
 
 .gift-info p {
-  color: var(--clr-grey-4);
-  /* text-align: justify; */
+  color: #48647f;
+
 }
 
 .date {
-  color: var(--clr-grey-5);
+  color: #231414;
   font-size: 0.85rem;
 }
 
@@ -239,8 +169,8 @@ Countdown Timer
 }
 
 .deadline-format {
-  background: var(--clr-primary-2);
-  color: var(--clr-white);
+  background: #063251;
+  color: #fff;
   margin-right: 1rem;
   width: 5rem;
   height: 5rem;
@@ -260,5 +190,5 @@ Countdown Timer
 .deadline h4:not(.expired) {
   font-size: 2rem;
   margin-bottom: 0.25rem;
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.25rem;
 }
